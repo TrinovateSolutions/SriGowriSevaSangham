@@ -98,13 +98,6 @@ app.get("/", (_, res) => {
 });
 
 /* ================= START ================= */
-// const PORT = 8080;
-// app.listen(PORT, () =>
-//   console.log(`✅ Website + Translate running on http://localhost:${PORT}`)
-// );
-
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, () => {
-  console.log(`Website + Translate running on port ${PORT}`);
-});
+const PORT = 8080;
+app.listen(PORT, () =>console.log(`✅ Website + Translate running on http://localhost:${PORT}`)
+);
