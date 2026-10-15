@@ -1,0 +1,220 @@
+/* =========================
+   FESTIVAL SECTION
+========================= */
+
+.festival-section{
+  width:100%;
+  padding:60px 8%;
+  background:#f8f4ee;
+  box-sizing:border-box;
+}
+
+/* MAIN TITLE */
+
+.festival-main-title{
+  text-align:center;
+  font-size:54px;
+  color:#721717;
+  margin-bottom:20px;
+  font-family:"Cinzel", serif;
+}
+
+.festival-main-desc{
+  max-width:900px;
+  margin:0 auto 70px;
+  text-align:center;
+  font-size:18px;
+  line-height:1.9;
+  color:#555;
+}
+
+/* FESTIVAL CARD */
+
+.festival-card{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  margin-bottom:80px;
+  background:white;
+  padding:35px;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* REVERSE LAYOUT */
+
+.festival-card.reverse{
+  direction:rtl;
+}
+
+.festival-card.reverse .festival-content{
+  direction:ltr;
+}
+
+/* IMAGE */
+
+.festival-image img{
+  width:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+/* CONTENT */
+
+.festival-content h2{
+  font-size:42px;
+  color:#721717;
+  margin-bottom:15px;
+  font-family:"Playfair Display", serif;
+}
+
+.festival-date{
+  display:inline-block;
+  background:#f3df80;
+  color:#721717;
+  padding:8px 18px;
+  border-radius:30px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.festival-content p{
+  color:#555;
+  line-height:1.9;
+  font-size:17px;
+}
+
+/* ANNADANAM BOX */
+
+.annadanam-box{
+  margin-top:30px;
+  background:#721717;
+  padding:25px;
+  border-radius:18px;
+}
+
+.annadanam-box h3{
+  color:#f3df80;
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.annadanam-box p{
+  color:white;
+  line-height:1.8;
+}
+
+@media (max-width:768px){
+
+.festival-card{
+    padding:20px 15px;
+}
+
+.festival-image{
+    width:100%;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.festival-image img{
+    display:block;
+    margin:0 auto;
+}
+
+}
+
+/* ================= TAB VIEW ================= */
+
+@media (min-width:769px) and (max-width:1024px){
+
+.festival-card{
+    display:block;
+}
+
+.festival-image{
+    float:left;
+    width:38%;
+    margin-right:25px;
+    margin-bottom:20px;
+}
+
+.festival-image img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.festival-content h2{
+    font-size:34px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+.festival-date{
+    display:inline-block;
+    margin-bottom:25px;
+}
+
+/* Clear float before description */
+.festival-content > p:not(.festival-date){
+    clear:both;
+    margin-top:20px;
+}
+
+.annadanam-box{
+    clear:both;
+}
+
+}
+
+/* NOTE */
+
+.festival-note{
+  background:white;
+  padding:40px;
+  border-left:8px solid #e6c85a;
+  border-radius:18px;
+  margin-top:50px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.festival-note h2{
+  color:#721717;
+  margin-bottom:15px;
+  font-size:34px;
+}
+
+.festival-note p{
+  color:#555;
+  line-height:1.8;
+  font-size:17px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .festival-card{
+    grid-template-columns:1fr;
+  }
+
+  .festival-card.reverse{
+    direction:ltr;
+  }
+
+  .festival-image img{
+    height:300px;
+  }
+
+  .festival-main-title{
+    font-size:42px;
+  }
+
+  .festival-content h2{
+    font-size:34px;
+  }
+
+}

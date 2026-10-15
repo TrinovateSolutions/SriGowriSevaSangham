@@ -1,0 +1,182 @@
+/*==============================
+GALLERY SECTION
+==============================*/
+
+.gallery-section{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.gallery-title{
+    text-align:center;
+    color:#721717;
+    font-size:48px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:40px;
+}
+
+/*==============================
+DROPDOWN
+==============================*/
+
+.gallery-item{
+    margin-bottom:18px;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.gallery-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:22px;
+    font-weight:600;
+    color:#721717;
+    user-select:none;
+}
+
+.gallery-item summary::-webkit-details-marker{
+    display:none;
+}
+
+/* Plus */
+
+.gallery-item summary::after{
+    content:"+";
+    font-size:30px;
+    color:#d4af37;
+    font-weight:bold;
+}
+
+/* Minus */
+
+.gallery-item[open] summary::after{
+    content:"−";
+}
+
+/*==============================
+CONTENT
+==============================*/
+
+.gallery-content{
+    padding:25px;
+    border-top:1px solid #eee;
+}
+
+.gallery-content h3{
+    color:#721717;
+    margin-bottom:18px;
+    font-size:28px;
+}
+
+/*==============================
+PHOTOS
+==============================*/
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-bottom:30px;
+}
+
+.photo-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.photo-grid img:hover{
+    transform:scale(1.03);
+}
+
+/*==============================
+VIDEOS
+==============================*/
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.video-grid video{
+    width:100%;
+    border-radius:12px;
+}
+
+/*==============================
+TABLET
+==============================*/
+
+@media (max-width:1024px){
+
+.photo-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.video-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-title{
+    font-size:40px;
+}
+
+}
+
+/*==============================
+MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+.gallery-section{
+    padding:15px;
+}
+
+.gallery-title{
+    font-size:34px;
+}
+
+.gallery-item summary{
+    font-size:18px;
+    padding:16px;
+}
+
+.gallery-item summary::after{
+    font-size:26px;
+}
+
+.gallery-content{
+    padding:18px;
+}
+
+.gallery-content h3{
+    font-size:22px;
+}
+
+.photo-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.photo-grid img{
+    height:220px;
+}
+
+.video-grid{
+    grid-template-columns:1fr;
+}
+
+}

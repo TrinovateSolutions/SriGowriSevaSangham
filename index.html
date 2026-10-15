@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Gowri Seva Sangham</title>
+
+    <!-- Google Font for the title -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- corrected stylesheet path -->
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="card">
+        <!-- Left deity image -->
+        <div class="left-figure">
+          <a href="/"
+            ><img src="/media/Main-Diety.JPG" alt="Shri Gowri Parameswari"
+          /></a>
+        </div>
+
+        <!-- Center content -->
+        <div class="center-content">
+          <div class="mtitle">
+            Sri Gowri Seva Sangham <span>(R) 1943</span>
+          </div>
+          <div class="icon-row">
+            <div class="icon"><img src="/media/3-L.webp" alt="icon 1" /></div>
+            <div class="icon"><img src="/media/2-L.webp" alt="icon 2" /></div>
+            <div class="icon"><img src="/media/1-L.jpg" alt="icon 3" /></div>
+          </div>
+
+          <div class="gold-divider"></div>
+
+          <div class="title" data-translate="yes">
+            Sri Gowri Panchayatana Devalayam
+          </div>
+          <div class="subtitle" data-translate="yes">
+            A place of devotion — tradition & blessings
+          </div>
+        </div>
+
+        <!-- Language selector -->
+        <div class="lang-selector">
+          <i class="fa-solid fa-language" aria-hidden="true"></i>
+          <select id="language" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="te">తెలుగు</option>
+            <option value="hi">हिंदी</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="nav-section">
+        <div class="nav-container">
+          <a href="/" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="/src/history.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>History</span>
+          </a>
+
+          <a
+            href="/src/adminstration.html"
+            class="nav-item"
+            data-translate="yes"
+          >
+            <i class="fa-solid fa-people-group"></i>
+            <span>Administration</span>
+          </a>
+          <a href="/src/temple.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-gopuram"></i>
+            <span>Temples</span>
+          </a>
+
+          <a href="/src/photos.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-photo-film"></i>
+            <span>Photos<br />videos</span>
+          </a>
+
+          <a href="/src/puja.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-hands-praying"></i>
+            <span>Puja and<br />timings</span>
+          </a>
+
+          <a href="/src/information.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Information<br />Announcements</span>
+          </a>
+
+          <a href="/src/festivals.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Festivals<br />Annadanam</span>
+          </a>
+
+          <a href="/src/osi.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span>Scholarship & <br /> Other Services</span>
+          </a>
+
+          <a href="/src/contact.html" class="nav-item" data-translate="yes">
+            <i class="fa-solid fa-user"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </section>
+      <section id="temple-highlights">
+        <h2 class="section-title" data-translate="yes">Temple Highlights</h2>
+
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img
+              src="/media/Temple Highlights/1.jpg"
+              alt="Slide 1"
+              class="active"
+            />
+            <img src="/media/Temple Highlights/2.JPG" alt="Slide 2" />
+            <img src="/media/Temple Highlights/3.JPG" alt="Slide 3" />
+            <img src="/media/Temple Highlights/4.JPG" alt="Slide 3" />
+            <img src="/media/Temple Highlights/5.jpeg" alt="Slide 3" />
+            <img src="/media/Temple Highlights/6.JPG" alt="Slide 3" />
+            <img src="/media/Temple Highlights/7.jpg" alt="Slide 3" />
+          </div>
+
+          <!-- Navigation buttons -->
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+
+          <!-- Dots -->
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+<!-- =========================
+     TEMPLE SERVICES SECTION
+========================= -->
+
+<section class="temple-services">
+
+  <!-- LEFT SIDE TEMPLE CARDS -->
+
+  <div class="temple-grid">
+
+    <!-- CARD 1 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/1.JPG"
+        alt="Sri Gowri Panchayatana"
+      />
+      <h3>
+        Sri Gowri Panchayatana Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=gowri" class="more-btn">
+        More →
+      </a>
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/2.jpg"
+        alt="Sri Geetha Mandiram"
+      />
+      <h3>
+        Sri Geetha Mandiram Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=geetha" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/3.JPG"
+        alt="Sri Ayyapa Swami"
+      />
+      <h3>
+        Sri Ayyapa Swami Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=ayyappa" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/Seetharam.jpeg"
+        alt="Sri Ayyapa Swami"
+      />
+      <h3>
+        Sri Rama Mandiram Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=rama" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/7.jpeg"
+        alt="Santoshi Mata"
+      />
+      <h3>
+        Santoshi Mata Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=santoshi" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/4.jpeg"
+        alt="Sri Navagraha"
+      />
+      <h3>
+        Sri Navagraha Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=navagraha" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 7 -->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/5.jpeg"
+        alt="Sri Rama Koti"
+      />
+      <h3>
+        Sri Rama Koti Stupa Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=ramakoti" class="more-btn">
+      More →
+      </a>
+    </div>
+
+    <!-- CARD 8-->
+
+    <div class="temple-box">
+      <img
+        src="/media/Temples/6.jpeg"
+        alt="Sri Akhanda Jyothi"
+      />
+      <h3>
+        Sri Akhanda Jyothi Sannidhi
+      </h3>
+      <a href="/src/temple.html?temple=akhanda" class="more-btn">
+      More →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+     <!-- <section id="temples-section">
+        <h2 class="section-title" data-translate="yes">Temples</h2>
+        <div class="gallery" id="templeGallery"> -->
+          <!-- Tile 0 -->
+       <!-- <button
+            class="tile"
+            data-index="0"
+            data-src="/media/Temples/1.JPG"
+            data-title="Gowri Panchayatana Sannidi"
+            data-desc="The presiding deity of our temple, Gowri Parameswari is worshipped for grace and prosperity. Daily rituals and special festivals draw devotees from far and wide."
+          >
+            <img
+              class="thumb"
+              src="/media/Temples/1.JPG"
+              alt="Gowri Parameswari"
+            />
+            <div class="title" data-translate="yes">
+              Sri Gowri Panchayatana Sannidhi
+            </div>
+          </button>  -->
+
+          <!-- Tile 1 -->
+         <!-- <button
+            class="tile"
+            data-index="1"
+            data-src="/media/Temples/2.jpg"
+            data-title="Geeta Mandhiram"
+            data-desc="Geeta Mandiram hosts recitations and discourses from the Bhagavad Gita and spiritual classes for all ages."
+          >
+            <img class="thumb" src="/media/Temples/2.jpg" alt="Ayyappa Swami" />
+            <div class="title" data-translate="yes">Sri Geetha Mandiram Sannidhi</div>
+          </button> -->
+
+          <!-- Tile 2 -->
+         <!-- <button
+            class="tile"
+            data-index="2"
+            data-src="/media/Temples/3.JPG"
+            data-title="Ayyappa Swami Sannidi"
+            data-desc="Ayyappa Swami is revered here with special observances during the Mandala season. The shrine is known for its serene atmosphere."
+          >
+            <img
+              class="thumb"
+              src="/media/Temples/3.JPG"
+              alt="Geeta Mandiram"
+            />
+            <div class="title" data-translate="yes">Sri Aayapa Swami Sannidhi</div>
+          </button> -->
+
+          <!-- Tile 3 -->
+          <!--<button
+            class="tile"
+            data-index="3"
+            data-src="/media/Temples/4.jpeg"
+            data-title="Navagrahalu"
+            data-desc="Navagraha shrine features rituals to honour the nine celestial influences and help devotees find astrological balance."
+          >
+            <img class="thumb" src="/media/Temples/4.jpeg" alt="Ramalayam" />
+            <div class="title" data-translate="yes">Sri Navagraha Sannidhi</div>
+          </button> -->
+
+          <!-- Tile 4 -->
+          <!--<button
+            class="tile"
+            data-index="4"
+            data-src="/media/Temples/5.jpeg"
+            data-title="Ramakoti Stupham"
+            data-desc="Ramakoti Stupham carries forward a legacy of Rama bhakti, uniting generations through sacred chants, offerings, and spiritual observances."
+          >
+            <img
+              class="thumb"
+              src="/media/Temples/5.jpeg"
+              alt="Santoshi Mata"
+            />
+            <div class="title" data-translate="yes">Sri Rama Koti Stupa Sannidhi</div>
+          </button> -->
+
+          <!-- Tile 5 -->
+         <!-- <button
+            class="tile"
+            data-index="5"
+            data-src="/media/Temples/6.jpeg"
+            data-title="Akhanda Jyothi"
+            data-desc="Akhanda Jyothi carries the essence of timeless spirituality, with its eternal flame inspiring devotion, peace, and inner awakening."
+          >
+            <img class="thumb" src="/media/Temples/6.jpeg" alt="Navagraha" />
+            <div class="title" data-translate="yes">Sri Akhanda Jyothi Sannidhi</div>
+          </button>
+        </div>
+      </section> -->
+      <section class="HET" data-translate="yes">
+        <div class="het-card history-HET">
+          <h3>Temple History</h3>
+          <p>
+            Shri Gowri Parameswari Devalayam has a rich spiritual history rooted
+            in devotion, tradition, and community service. The temple has been a
+            sacred center for generations of devotees.
+          </p>
+          <button class="het-btn">Read More</button>
+        </div>
+
+        <div class="het-card events-HET">
+          <h3>Events & Announcements</h3>
+          <p>
+            Stay updated with upcoming festivals, special poojas, annadanam
+            programs, and important temple announcements.
+          </p>
+          <button class="het-btn">View Events</button>
+        </div>
+        <div class="het-card tenders-HET">
+          <h3>Tenders & Notices</h3>
+          <p>
+            Official tenders, notices, and administrative updates issued by Sri
+            Gowri Seva Sangham are published here for transparency.
+          </p>
+          <button class="het-btn">View Tenders</button>
+        </div>
+      </section>
+
+      
+<section class="donations">
+  <button class="gdon" data-type="goshala" data-translate="yes">
+    Goshala Donation
+  </button>
+
+  <button class="don" data-type="general" data-translate="yes">
+    Donation
+  </button>
+
+  <button class="sdon" data-type="scholarship" data-translate="yes">
+    Scholarship Donation
+  </button>
+</section>
+
+    </main>
+    <footer class="footer">
+      <div class="f-title" data-translate="yes">
+        Shri Gowri Parameswari Devalayam
+      </div>
+
+      <div class="footer-visitors">
+        <span>Site Visitors</span>
+        <strong id="visitorCount">0</strong>
+      </div>
+
+      <div class="f-info">
+        <div class="ff-info" data-translate="yes">
+          <h4>Contact Us</h4>
+          <h5>
+            Address : Gowri sangham street, Nidanamdodii, Gavarapalem,<br />
+            Anakapalli, Andhra Pradesh 531002
+          </h5>
+          <h5>Phone : +91 9191445974</h5>
+          <h5>Email : srigowrisevasangham@gmail.com</h5>
+        </div>
+        <div class="f-menu" data-translate="yes">
+          <h4>Menu</h4>
+          <a href="">Anakapalle Merchant Association</a>
+          <a href="">Elementry, High Schools & Colleges</a>
+          <a href="">Hospital</a>
+          <a href="">Kalyanamandapam's</a>
+        </div>
+        <div class="f-links" data-translate="yes">
+          <h4>Links</h4>
+          <a href="/src/history.html">History</a>
+          <a href="/src/temple.html?temple=goshala">Goshala</a>
+          <a href="/src/adminstration.html?show=archakulu">Archakulu</a>
+          <a href="/src/adminstration.html?show=temple-sevak">Temple Sevak</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- translator + wiring -->
+    <script src="/src/script.js"></script>
+    <script src="/src/carousel.js" defer></script>
+    <!-- ===== Donation Popup ===== -->
+    <div class="donation-modal" id="donationModal">
+      <div class="donation-overlay"></div>
+
+      <div class="donation-box">
+        <button class="donation-close">&times;</button>
+
+        <h2 id="donationTitle">Donation</h2>
+
+        <div class="donation-content">
+
+    <!-- LEFT BOX -->
+    <div class="left-box">
+
+        <img id="donationQR"
+             src="/media/Scholarship donation QR.jpeg"
+             alt="PhonePe QR">
+
+        <div class="bank-details">
+
+            <p><strong>Account Name:</strong> GOWRI SEVA SANGAM</p>
+
+            <p><strong>Bank:</strong> Union Bank</p>
+
+            <p><strong>Account No:</strong> 015210011000184</p>
+
+            <p><strong>IFSC:</strong> UBIN0801526</p>
+
+            <p><strong>Branch:</strong> ANAKAPALLI-GAVARAPALLEM Branch</p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT BOX -->
+      <div class="right-box">
+
+        <p>Please fill the details after donating.</p>
+
+        <a href="https://forms.gle/RasG8poUgjYbisA3A"
+           target="_blank"
+           class="form-btn">
+            Click this link
+        </a>
+
+        <p>OR Scan this QR</p>
+          <img id="donationScanQR" src="/media/Donation QR.jpeg" alt="Donation QR">
+      </div>
+
+    </div>
+  </div>
+</div>
+    
+  <script src="/src/script.js"></script>
+
+  </body>
+</html>

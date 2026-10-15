@@ -1,0 +1,550 @@
+/* =========================
+   TEMPLE PAGE BASE
+========================= */
+
+.temple-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.temple-page .section-title {
+  text-align: center;
+  font-size: 38px;
+  color: #721717;
+  margin-bottom: 50px;
+  font-family: "Great Vibes", cursive;
+  position: relative;
+}
+
+.temple-page .section-title::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: #e6c85a;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 6px;
+}
+
+/* =========================
+   FIVE MAIN TEMPLES (GRID)
+========================= */
+
+/*=========================
+MAIN CONTAINER
+==========================*/
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion{
+  max-width:1350px;
+  margin:20px auto;      /* reduced gap */
+}
+
+.accordion-btn{
+    width:60%;
+    margin:20px auto;          /* <-- Center the button */
+
+    background:#7c1616;
+    color:#fff;
+    border:none;
+    border-radius:16px;
+
+    padding:14px 28px;
+    min-height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.accordion-btn:hover{
+  background:#8d1c1c;
+}
+
+.accordion-btn span:first-child{
+  font-size:18px;        /* title size */
+  line-height:1.4;
+}
+
+.accordion-btn .icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #e6c85a;
+
+    width:50px;
+    height:50px;
+
+    margin:0;
+    padding:0;
+
+    position:static;      /* Remove top/relative positioning */
+    transform:none;
+}
+
+.accordion-content{
+  display:none;
+  margin-top:18px;       /* reduced gap */
+}
+
+.accordion-content.active{
+  display:block;
+}
+
+/* ================= MOBILE ONLY ================= */
+
+/* Mobile View */
+@media (max-width: 768px){
+
+  .accordion-btn{
+      width: 92%;
+      min-height: 62px;
+      padding: 12px 16px;
+      border-radius: 14px;
+  }
+
+  .accordion-btn span:first-child{
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 400;
+      flex: 1;
+      padding-right: 12px;
+  }
+
+  .accordion-btn .icon{
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      color: #e6c85a;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .accordion-content{
+      width: 92%;
+      margin: 12px auto 0;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+  .accordion-btn{
+    padding-top: 25px;
+    padding-bottom: 14px;
+  }
+  .accordion-btn .icon{
+     width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 10px;
+     
+      color: #e6c85a;
+
+     
+  }
+  .accordion-btn span:first-child{
+      font-size: 21px;
+      line-height: 1.4;
+     
+  }
+
+}
+.main-temples{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+  padding:20px;
+}
+
+/*=========================
+CARD
+==========================*/
+
+.temple-card{
+  background:#fff;
+  border-left:8px solid #d4af37;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  padding:25px;
+  transition:.35s;
+  margin-bottom:20px;
+}
+
+.temple-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+/*=========================
+TOP SECTION
+==========================*/
+
+.top-section{
+    display:flex;
+    gap:35px;
+    align-items:flex-start;
+}
+
+/*=========================
+IMAGE
+==========================*/
+
+.temple-image{
+    flex:0 0 260px;
+}
+
+.temple-image img{
+    width:250px;
+    height:320px;
+    object-fit:contain;
+    border:4px solid #d4af37;
+    border-radius:14px;
+    padding:6px;
+    background:#fff;
+    display:block;
+}
+
+/*=========================
+CONTENT
+==========================*/
+
+.temple-content{
+    flex:1;
+}
+
+.temple-content h2{
+    color:#721717;
+    font-size:32px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:20px;
+    display:inline-block;
+    position:relative;
+}
+
+.temple-content h2::after{
+    content:"";
+    display:block;
+    width:70%;
+    height:4px;
+    background:#d4af37;
+    margin-top:10px;
+    border-radius:20px;
+}
+
+.about-box{
+    margin-top:15px;
+}
+
+.about-box p{
+    font-size:18px;
+    line-height:1.7;
+    color:#444;
+    text-align:justify;
+    margin:0;
+}
+
+/*=========================
+SPECIAL PROGRAMS
+==========================*/
+
+.program-section{
+    margin-top:10px;
+    padding-top:3px;
+    border-top:2px dashed #d4af37;
+}
+
+.program-title{
+    color:#721717;
+    font-size:32px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:15px;
+}
+
+.program-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px 10px;
+}
+
+.program-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    font-size:17px;
+    color:#444;
+    line-height:1.8;
+}
+
+.program-list li::before{
+    content:"✔";
+    color:#d4af37;
+    font-size:22px;
+    font-weight:bold;
+    flex-shrink:0;
+    margin-top:2px;
+}
+
+/*=========================
+MOBILE
+==========================*/
+@media (max-width:768px){
+
+.temple-card{
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 20px;
+  border-left: 5px solid #d4af37;
+  border-radius: 16px;
+  box-sizing: border-box;
+  }
+
+.top-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.temple-image{
+  flex:none;
+  width:100%;
+  text-align:center;
+}
+
+.temple-image img{
+  width:180px;
+  height:auto;
+  object-fit:cover;
+}
+
+.temple-content{
+  width:100%;
+}
+
+.temple-content h2{
+  font-size:26px;
+  text-align:center;
+  display:block;
+}
+
+.temple-content h2::after{
+  width:120px;
+  margin:10px auto 0;
+}
+
+.about-box{
+  width:100%;
+}
+
+.about-box p{
+  width:100%;
+  font-size:16px;
+  line-height:1.8;
+  text-align:justify;
+}
+
+.program-section{
+  margin-top:20px;
+}
+
+.program-title{
+  font-size:24px;
+}
+
+.program-list{
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.program-list li{
+  font-size:16px;
+}
+
+}
+
+@media (max-width:900px){
+
+  .main-temples{
+    padding: 8px;      /* reduce outer space */
+  }
+
+  .accordion-content{
+    padding: 0;
+  }
+
+  .temple-card{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+}
+/* =========================
+   VERTICAL TEMPLE SECTIONS
+========================= */
+
+.temple-vertical {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.temple-vertical.reverse {
+  flex-direction: row-reverse;
+}
+
+.temple-vertical img {
+  width: 360px;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.temple-vertical h2 {
+  font-size: 26px;
+  color: #721717;
+  margin-bottom: 10px;
+}
+
+.temple-vertical p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.temple-vertical ul {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.temple-vertical ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+
+.temple-theory-card{
+  max-width: 650px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #e6c85a;
+  font-family: Arial, sans-serif;
+}
+.temple-theory-card h2{
+  color: #6d0000;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.temple-theory-card p{
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.temple-theory-card ul{
+  padding-left: 25px;
+}
+.temple-theory-card li{
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media (max-width: 768px) {
+
+  .main-temples {
+    grid-template-columns: 1fr;
+  }
+
+  .temple-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .temple-card img {
+    width: 100% !important;
+    height: 250px !important;       /* ✅ fixed height */
+    object-fit: cover !important;   /* ✅ fill properly */
+    object-position: center !important;/* ✅ show head */
+  }
+
+  .temple-content {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-temples {
+    grid-template-columns: 1fr;
+  }
+
+  .temple-vertical {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .temple-vertical.reverse {
+    flex-direction: column;
+  }
+
+  .temple-vertical img {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-temples {
+    grid-template-columns: 1fr;
+  }
+
+  .temple-page .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .temple-theory-card {
+    padding: 18px;
+  }
+
+  .temple-theory-card h2 {
+    font-size: 24px;
+  }
+
+  .temple-theory-card p,
+  .temple-theory-card li {
+    font-size: 15px;
+  }
+}
